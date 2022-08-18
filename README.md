@@ -6,5 +6,20 @@ Simple API using the repo [Anime-Girls-Holding-Programming-Books](https://github
 ![Alt text](./Images/Python/Aoba_Suzukaze_techgo_Python_For_Beginners.png)
 
 
+## Setup
+
+#### Git clone the repo
+    git clone https://github.com/feijoes/AnimeGirls-with-Books-API.git
+    
+End enter the folder
+
+    cd AnimeGirls-with-Books-API
+    
+#### Install the dependecies
+    npm install
+    
+#### Run 
+    npm start
+
     
 
