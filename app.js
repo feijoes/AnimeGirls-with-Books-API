@@ -12,6 +12,14 @@ const randomImg = path => {
   }`;
 };
 app.get("/", (req, res) => {
+  data = { CurrentIMGS: {} };
+
+  Object.keys(ImagesNames).map(key => {
+    data.CurrentIMGS[key] = ImagesNames[key].length;
+  });
+  res.send(data);
+});
+app.get("/api", (req, res) => {
   console.log(req.query);
   res.sendFile(__dirname + "\\Images\\" + randomImg(req.query.filter));
 });
