@@ -1,15 +1,13 @@
-name: CI
-
+name: GET images
 
 on:
   schedule:
     - cron: "0 13 * * 1"
-    
+
   workflow_dispatch:
 
 permissions:
   contents: write
-
 
 jobs:
   build:
@@ -27,4 +25,4 @@ jobs:
           git add .
           git commit -m "Automatic publish from github.com/project"
           git push https://github.com/feijoes/AnimeGirls-with-Books-API.git master
-          echo Update 
+          echo Update
