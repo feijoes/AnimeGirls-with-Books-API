@@ -21,11 +21,12 @@ jobs:
 
       - name: Update Images
         run: |
-          git clone https://.:${{ secrets.CLONE_TOKEN }}@github.com/cat-milk/Anime-Girls-Holding-Programming-Books.git
+          rm -r Images
+          git config --global user.email "pcaladomoura@gmail.com"
+          git config --global user.name "Pedro Calado Moura"
+          git submodule add https://.:${{ secrets.CLONE_TOKEN }}@github.com/cat-milk/Anime-Girls-Holding-Programming-Books.git
           mv Anime-Girls-Holding-Programming-Books Images
           git add .
           git commit -m "Automatic publish from github.com/project"
-          git push target master
+          git push https://github.com/feijoes/AnimeGirls-with-Books-API.git master
           echo Update 
-  
-        
