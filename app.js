@@ -3,7 +3,7 @@ const app = express();
 const fs = require("fs");
 const ImagesNames = JSON.parse(fs.readFileSync("images.json"));
 
-const randomImg = (path) => {
+const randomImg = path => {
   const keys = Object.keys(ImagesNames);
   const folder = path || keys[Math.floor(keys.length * Math.random())];
   const listfolder = ImagesNames[folder];

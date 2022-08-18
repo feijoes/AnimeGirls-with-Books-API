@@ -5,8 +5,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "format": "prettier --write '**/*.{js,css,json,md}'"
+    "build" : "node build.js",
+    "dev": "nodemon app.js",
+    "start" : "node build.js && node app.js",
+    "format": "prettier --write ./**/*.{js,md,json}"
   },
   "author": "Pedro Calado Moura <pcaladomoura@gmail.com>",
   "license": "MIT",
