@@ -1,0 +1,31 @@
+name: CI
+
+
+on:
+  push:
+    branches: [ "master" ]
+  schedule:
+    - cron: "0 13 * * 1"
+    
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update Images
+        run: |
+          git clone https://.:${{ secrets.CLONE_TOKEN }}@github.com/cat-milk/Anime-Girls-Holding-Programming-Books.git
+          mv Anime-Girls-Holding-Programming-Books Images
+          git add .
+          git commit -m "Automatic publish from github.com/project"
+          git push target master
+          echo Update 
+  
+        
