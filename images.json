@@ -106,16 +106,6 @@
     "Ui_Hirasawa_Holding_C_Programming_Language.png",
     "Yamada_Nina_Holding_C_Programming_Language.png"
   ],
-  "C#": [
-    "Chisaki_Tapris_C#.png",
-    "Fuuka_Kikuchi.png",
-    "Kujou_Karen_dotNet_2_0_IL_Assembler.png",
-    "Kurumizawa_Satanichia_C#.png",
-    "PRO_C#_7.jpg",
-    "Shiori_Shiomiya_CLR_via_CSharp_In_Russian.png",
-    "Violet_Evergarden_Holds_C_Sharp_Book_Portuguese.png",
-    "Yasuraoka_Hanabi_Reading_CSharp_Language_Book.png.png"
-  ],
   "C++": [
     "c++_For_Dummies.png",
     "cirno_teaches_c++.jpg",
@@ -146,6 +136,16 @@
     "Tohru_Reading_CPP.png",
     "Uiharu_Kazari_Modern_CPP_Design .jpg",
     "zero_two_c++_the_ultimate_crash_course_to_learning_c++_from_basic_to_advanced_paul_laurence.jpg"
+  ],
+  "CHashtag": [
+    "Chisaki_Tapris_C#.png",
+    "Fuuka_Kikuchi.png",
+    "Kujou_Karen_dotNet_2_0_IL_Assembler.png",
+    "Kurumizawa_Satanichia_C#.png",
+    "PRO_C#_7.jpg",
+    "Shiori_Shiomiya_CLR_via_CSharp_In_Russian.png",
+    "Violet_Evergarden_Holds_C_Sharp_Book_Portuguese.png",
+    "Yasuraoka_Hanabi_Reading_CSharp_Language_Book.png.png"
   ],
   "Cobol": [
     "Beatrice_Hugging_Murach's_Mainframe_Cobol.png",
@@ -188,7 +188,7 @@
     "Sakurajima_Mai_holding_Elixir_in_Action.png"
   ],
   "Elm": ["Nagato_Yuki_Programming_Elm.png"],
-  "F#": [
+  "FHashtag": [
     "Akko_Holding_Domain_Modeling_Made_Functional.png",
     "Fumami_Yui_Programming_FSharp_In_Japanese.png",
     "Makise_Kurisu_FSharp_For_Scientists.png"
