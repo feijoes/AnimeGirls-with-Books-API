@@ -8,5 +8,5 @@ files.forEach(folder => {
 
 fs.writeFile(__dirname + "/images.json", JSON.stringify(data), err => {
   if (err) throw err;
-  else console.log("images.json create");
+  else console.log("UPDATE readme");
 });

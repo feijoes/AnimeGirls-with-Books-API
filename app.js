@@ -11,7 +11,8 @@ app.get("/", (req, res) => {
   Object.keys(ImagesNames).map((key) => {
     data.CurrentIMGS[key] = ImagesNames[key].length;
   });
-  res.json(data);
+  res.header("Content-Type",'application/json');
+  res.send(JSON.stringify(data, null, 4));
 });
 
 const randomImg = (path) => {
