@@ -31,7 +31,7 @@ fs.readFile('README.md', function read(err, data) {
   const idx =
     file_content.indexOf('## Current Folders') + '## Current Folders'.length;
   const result =
-    file_content.slice(0, idx) + '\n' + str + file_content.slice(idx);
+    file_content.slice(0, idx) + '\n' + str ;
   fs.writeFile(__dirname + '/README.md', result, err => {
     if (err) throw err;
     else console.log('Update readme');
