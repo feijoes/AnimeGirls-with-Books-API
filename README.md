@@ -6,11 +6,29 @@ Simple API using the repo [Anime-Girls-Holding-Programming-Books](https://github
 
 ## API GUIDE
 
-Go to `http://localhost:3000/` , you will see JSON
+Go to `http://localhost:3000/` , you will see JSON like this thats show the names and the numbers of images in that folder
 
 ![2e011cbd-bf64-4d59-b191-f6b25ee96c8b](https://user-images.githubusercontent.com/74252371/185484842-c244cffc-d09a-4318-bcce-764381f150fe.jpg)
 
+### Also you can see in [Current Folders](#CurrentFolders) section
+
+#### If you go to `http://localhost:3000/api/` will display a random image
+![f2ed05bb-8d51-460d-8106-9a8e43e684eb](https://user-images.githubusercontent.com/74252371/185755729-5df93d6d-745d-4051-880c-e1ceb8ed5d23.jpg)
+
+### Current paramethers
+
+#### `filter`
+
+You can filter images by the book or theme by passing the name `/api?filter=Folder`
+
+You can also pass multiple paramethers `/api?filter=Python,C,C++`
+
+#### `size` 
+
+You can set width and height `/api?size=width,height` 
+![4a942040-813a-43f5-afa1-723aec2a6496](https://user-images.githubusercontent.com/74252371/185772061-84e9b5f4-6e6b-41f4-a9c6-5a59fcd9a4da.jpg)
 ## Setup
+
 
 #### Git clone the repo
 
@@ -27,8 +45,9 @@ End enter the folder
 #### Run
 
     npm start
+    
 
-## Current Folders
+## <a name="CurrentFolders">Current Folders</a> 
 Name | Len folder | Example 
  --- | :---: | :---:  
 | `ABAP`|2| <img src="./Images/ABAP/Astolfo_reading_ABAP_objects.png"  width="160"> 
