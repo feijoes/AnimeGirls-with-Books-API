@@ -29,5 +29,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run build --if-present
+    - run: |
+       npm run build --if-present
+       git config --global user.email "pcaladomoura@gmail.com"
+       git config --global user.name "Pedro Calado Moura"
+       git add .
+       git commit -m "Action run build"
+       git push https://github.com/feijoes/AnimeGirls-with-Books-API.git master
   
