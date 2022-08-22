@@ -19,6 +19,7 @@ fs.readFile('README.md', function read(err, data) {
       key = key.replaceAll('#', 'Hashtag');
     }
     let folder = IMAGES[key];
+    if(!folder) console.log(key)
     str +=
       '| `' +
       key +
