@@ -1,10 +1,10 @@
 const fs = require('fs');
 
-const files = fs.readdirSync(__dirname + '/images/');
+const files = fs.readdirSync(__dirname + '/Images/');
 let data = {};
 files.forEach(folder => {
   if (!folder.endsWith('.md'))
-    data[folder] = fs.readdirSync(__dirname + '/images/' + folder);
+    data[folder] = fs.readdirSync(__dirname + '/Images/' + folder);
 });
 
 fs.writeFile(__dirname + '/images.json', JSON.stringify(data), err => {
