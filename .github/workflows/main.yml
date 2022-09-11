@@ -1,8 +1,8 @@
 name: GET images
 
 on:
-  schedule:
-    - cron: "0 13 * * 1"
+  #schedule:
+    #- cron: "0 13 * * 1"
 
   workflow_dispatch:
 
