@@ -11,7 +11,7 @@ app.use(
   )
 );
 
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
   data = { CurrentIMGS: {} };
 
   Object.keys(ImagesNames).map(key => {
